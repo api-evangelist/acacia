@@ -1,8 +1,25 @@
 aid: acacia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/acacia.png
 name: Acacia
-description: 'Acacia is a company surfaced as a portfolio company of matrix-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: frontier. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Acacia (Acacia Communications) is a coherent optical networking company, an early Matrix
+  Partners portfolio company that was acquired by Cisco. Acacia designs and manufactures high-speed
+  coherent optical interconnect solutions built on silicon photonics, low-power DSP, and 3D siliconization,
+  including performance-optimized modules (AC1200, CIM 8), MSA pluggable modules (CFP, CFP2, OSFP,
+  QSFP-DD, QSFP28), and client optics components (PAM4 DSP, optical engines). These power AI scale-out
+  and scale-across fabrics, data center interconnect, metro and long-haul networks, submarine cables,
+  access and cable networks, and space communications. Acacia is a hardware/components provider and does
+  not publish a public developer API or programmatic platform.'
 url: https://raw.githubusercontent.com/api-evangelist/acacia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +33,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Frontier
+- Optical Networking
+- Silicon Photonics
+- Semiconductors
+- Networking Hardware
+- Data Center Interconnect
+- Coherent Optics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/acacia-domain-security.yml
 - type: Website
   url: https://acacia-inc.com
+- type: Blog
+  url: https://acacia-inc.com/blog/
+- type: Support
+  url: https://acacia-inc.com/support-center/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
