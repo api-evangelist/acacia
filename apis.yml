@@ -12,14 +12,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/acacia.png
 name: Acacia
-description: 'Acacia (Acacia Communications) is a coherent optical networking company, an early Matrix
-  Partners portfolio company that was acquired by Cisco. Acacia designs and manufactures high-speed
-  coherent optical interconnect solutions built on silicon photonics, low-power DSP, and 3D siliconization,
-  including performance-optimized modules (AC1200, CIM 8), MSA pluggable modules (CFP, CFP2, OSFP,
-  QSFP-DD, QSFP28), and client optics components (PAM4 DSP, optical engines). These power AI scale-out
-  and scale-across fabrics, data center interconnect, metro and long-haul networks, submarine cables,
-  access and cable networks, and space communications. Acacia is a hardware/components provider and does
-  not publish a public developer API or programmatic platform.'
+description: Acacia (Acacia Communications) is a coherent optical networking company, an early Matrix Partners portfolio
+  company that was acquired by Cisco. Acacia designs and manufactures high-speed coherent optical interconnect solutions
+  built on silicon photonics, low-power DSP, and 3D siliconization, including performance-optimized modules (AC1200,
+  CIM 8), MSA pluggable modules (CFP, CFP2, OSFP, QSFP-DD, QSFP28), and client optics components (PAM4 DSP, optical
+  engines). These power AI scale-out and scale-across fabrics, data center interconnect, metro and long-haul networks,
+  submarine cables, access and cable networks, and space communications. Acacia is a hardware/components provider
+  and does not publish a public developer API or programmatic platform.
 url: https://raw.githubusercontent.com/api-evangelist/acacia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -29,7 +28,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-08-19'
 tags:
 - Company
 - Frontier
@@ -46,6 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/cisco/
+  name: Cisco
+  x-relationship: acquisition
+  x-generated-by: cisco-family:2026-08-19
+  x-acquired: 2021
 - type: DomainSecurity
   url: security/acacia-domain-security.yml
 - type: Website
@@ -59,3 +64,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: cisco
+x-relationship: acquisition
+x-acquired: 2021
